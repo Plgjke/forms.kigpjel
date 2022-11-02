@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles_1.css" />
+    <title>Form 1</title>
+  </head>
+  <body>
+    <form action="#">
+      <div class="form">
+        <h1>Float Labels</h1>
+        <div class="cluster">
+          <input type="text" name="name" id="name" required />
+          <span class="bar"></span>
+          <label for="name">Name</label>
+        </div>
+        <div class="cluster">
+          <input type="email" name="email" id="email" required />
+          <span class="bar"></span>
+          <label for="email">Email</label>
+        </div>
+        <div class="cluster">
+          <input type="number" name="age" id="age" min="18" max="99" required />
+          <span class="bar"></span>
+          <label for="age">Age</label>
+        </div>
+        <div class="cluster">
+          <textarea
+            name="description"
+            id="description"
+            rows="3"
+            required
+          ></textarea>
+          <span class="bar"></span>
+          <label for="description">Description</label>
+        </div>
+        <button type="submit">Contact</button>
+      </div>
+    </form>
+  </body>
+</html>
