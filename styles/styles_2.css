@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/* General styles */
+:root {
+  --primary_color: #1e6f5c;
+  --secondary_color: #289672;
+  --tertiary_color: #29bb89;
+  --white: #f9f9f9;
+  --black: #23272d;
+  --gray: #5e5d5d;
+  --degraded: linear-gradient(
+    90deg,
+    var(--primary_color),
+    var(--secondary_color)
+  );
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 2rem;
+  --xl: 3rem;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+/* styles */
+body {
+  background: var(--degraded);
+  color: var(--white);
+}
+h1 {
+  margin-top: 3rem;
+  font-size: var(--xl);
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 5px 5px 10px var(--black);
+}
+p {
+  margin: 10px 0;
+  font-size: var(--sm);
+  text-align: center;
+  text-shadow: 5px 5px 10px var(--black);
+}
+form {
+  width: 70vw;
+  max-width: 500px;
+  min-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  font-size: var(--md);
+  text-shadow: 5px 5px 10px var(--black);
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 2rem auto;
+  width: 100%;
+  min-height: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 3px 3px 20px var(--black);
+}
+input,
+textarea {
+  padding: 1rem 1.5rem;
+  font-size: var(--sm);
+  color: var(--primary_color);
+}
+.inline {
+  width: unset;
+  margin: 0 0.5rem 0 0;
+  box-shadow: none;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  color: var(--tertiary_color);
+}
+.profile-picture {
+  margin-top: 2rem;
+}
+.profile-picture_inp {
+  color: var(--tertiary_color);
+  font-size: var(--sm);
+  background-color: var(--white);
+  cursor: pointer;
+  border: 6px solid transparent;
+}
+.referrer-select {
+  min-height: 3.5rem;
+}
+.referrer-area {
+  resize: none;
+}
+input[type="submit"] {
+  display: block;
+  width: 70%;
+  min-width: 100px;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: var(--sm);
+  background-color: var(--tertiary_color);
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
